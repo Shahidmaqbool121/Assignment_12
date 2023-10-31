@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        /* remove list style bullet points */
+        ul li a {
+            list-style: none;
+            text-decoration: none;
+        }
+        /* use child combinator to display the menu list item inline */
+        ul > li {
+            display: inline;
+        }
+        /* use Adjacent sibling combinator selector to apply some margin between the menu list item */
+        li + li {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Q2. For the given index.html file. Perform the following task, without changing the index.html file.</h3>
+        <p>Use the Descendant combinator selector to remove list style type bullet points and text underlining of the 
+            Menu list items <br>
+            Use the child combinator to display the menu list item inline <br>
+            Use the Adjacent sibling combinator selector to apply some margin between the menu list items.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Your content here -->
+    </main>
+</body>
+</html>

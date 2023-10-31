@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        /* B-one target the anchor tag a change the color */
+        nav a {
+            color: greenyellow;
+        }
+        /* target the first h2 tag and change the text and background color */
+        nav > h2 {
+           color: rgb(201, 138, 138);
+           background-color: snow;
+        }
+        /* B three - target the first p tag and change the text to red */
+        ul + p {
+            color: red;
+        }
+        /* c one - target the anchor tags with attribute href and change colour to red */
+
+        a[href] {
+            color: red;
+            text-decoration: none;
+        }
+        /* c two- target the anchor tag with attribute of class name active */
+        a[class="active"] {
+            color: blue;
+            text-decoration: underline;
+
+        }
+        /* C three - Target the anchor tag with attribute of class targer whose value is _"self" and change the background color */
+        a[target="_self"] {
+            background-color: #ccc;
+        }
+        /* D -1 target the last p tag and add after its value */
+        p:last-child::after {
+            content: "...";
+
+        }
+        /* D-2 target the list bullet points and change the color of bullet points */
+        li::marker {
+            color: green;
+        }
+        /* D-3 among the three p tag target the 2nd p tag select the first letter of the second p tag and change the color to red also increase the font size to30px */
+        p:nth-child(even)::first-letter {
+            color: rgb(133, 39, 39);
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Q1. For the given index.html file. Perform the following task, without changing the index.html file.</h3>
+        <nav>
+            <h2>PW Skills</h2>
+            <div>
+                <h2>Full Stack Development</h2>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" class="active" target="_blank">About</a></li>
+                    <li><a href="#" target="_blank">Services</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <p>The Greater Kashmir</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero atque recusandae ut optio. Blanditiis.</p>
+            <p>read articles</p>
+        </nav>
+    </header>
+</body>
+</html>
